@@ -17,7 +17,8 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
-    --main1-color: #a600ff;
+    --main1-color:#FF0000;
+    --main5-color:#a600ff;
 
 }
 
@@ -32,7 +33,7 @@ html {
 
 body {
     /*background: var(--bg-color);*/
-    background-color: var(--second-bg-color);
+    background-color: black;
 
     color: var(--text-color);
 }
@@ -77,9 +78,9 @@ header {
     transition: .3s;
 }
 
-.navbar a:hover, 
+.navbar a:hover,
 .navbar a.active {
-    color: var(--main1-color);
+    color: var(--main-color);
 
 }
 
@@ -96,17 +97,125 @@ h3{
     font-size: 3.2rem;
     font-weight: 700;
 }
+.imgCha{
+    width: 700px;
+    height: 440px;
+    background-color: #323946;
+    border-radius: 10px;
+}
+
+
+
+
+* {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container {
+         max-width: 1000px;
+         position: relative;
+         margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         padding: 16px;
+         margin-top: -22px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+         
+      }
+      /* Position the "next button" to the right */
+      .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit seethrough */
+      .prev:hover, .next:hover {
+         background-color: rgba(0,0,0,0.8);
+      }
+      /* Caption text */
+      .text {
+         color: black;
+         font-size: 15px;
+         padding: 8px 12px;
+         position: absolute;
+         bottom: 8px;
+         width: 100%;
+         text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+         color: #f2f2f2;
+         font-size: 12px;
+         padding: 8px 12px;
+         position: absolute;
+         top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #ffffff;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+      }
+      .active, .dot:hover {
+         background-color: #ff0000;
+      }
+
+
+
+
+
+
+
+
+
+
+
 .vid1{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 700px;
     border-radius: 20px;
 }
 .gamedis{
-    margin-left: 820px;
-    margin-top: -380px;
+    margin-left: 750px;
+    margin-top: -400px;
     border-radius: 20px;
-    background-color:#505050d3;
-    
+    background-color: #323946;
+    width: 500px;
+    display: flexbox;
+}
+.disOpt{
+    width: 300px;
+    padding-left: 20px;
+
+    font-size: 1.9rem;
+}
+.disAns{
+    width: 200px;
+    text-align: end;
+    padding-right: 20px;
+
+    font-size: 1.9rem;
+}
+.disLine{
+    margin-left: 20px;
+    width: 460px;
+    height: 1px;
+    background-color: aliceblue;
 }
 
 .hr1{
@@ -120,3 +229,110 @@ h3{
     font-size: 2.7rem;
     font-weight: 500;
 }
+.Writing{
+    
+    background-color:#323946;
+}
+
+.Overview{
+    margin-top: -100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.Story{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.line3{
+    width: 1300px;
+    height: 3px;
+    background-color: #fff;
+}
+.line1{
+    margin-left: 45px;
+    width: 400px;
+    height: 1px;
+    background-color: #fff;
+}
+.line{
+    width: 1300px;
+    height: 3px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.img5{
+    width: 500px;
+    border-radius: 10px;
+}
+.services h2 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.services{
+    background-color:black;
+}
+.services-container .services-box {
+    flex: 1 1 20rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main1-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 6rem;
+    color: var(--main1-color);
+
+}
+
+.services-box h3 {
+    font-size: 2.1rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main1-color);
+
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main1-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.gameplay{
+    background-color: #323946;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+

@@ -9,6 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 
     <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header class="header" id="changeColor">
@@ -17,9 +19,9 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="index.html#service">Skills</a>
-            <a href="#portfolio">Projects</a>
+            <a href="#portfolio"  class="active">Projects</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </nav>
@@ -28,30 +30,166 @@
     <section class="home" id="home">
 
         <div class="home-content">
+            <br>
+            <br>
             <h3>Third Person Shooter (RPG)</h3>
-            <video src="video/Gameplay_Gangs Of Wassepur.mp4" controls class="vid1"></video>
+            <br>
+            <div class="imgCha">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 4</div> -->
+                        <video src="video/Gameplay_Gangs Of Wassepur.mp4"  controls  style="width: 100%;" id="myVid"></video>
+                        <!--<div class="text">Welcome to Tutorials Point</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 4</div> -->
+                        <img src="Gangs_Ref1.png" style="width:100%;">
+                        <!--<div class="text">Start yo</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 4</div> -->
+                        <img src="Gangs_Ref3.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">4 / 4</div> -->
+                        <img src="Gangs_Ref4.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)" ></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            </div>
+
+
             <div class="gamedis">
                 <br>
+                <h3 style="text-align: center; color: red;">Gangs</h3>
+                <h3 style="text-align: center; color: red;">of</h3>
+                <h3 style="text-align: center; color: red;">Wasseypur</h3>
                 <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Title:                            <span>Gangs of Wasseypur</span></pre>
                 <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Game Engine:                        <span>Unreal Engine</span></pre>
-                <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Programming Language:            <span>Blueprint</span></pre>
-                <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Genre:                                       <span>RPG,Shooting</span></pre>
-                <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Time Duration:                                   <span>3 week</span></pre>
-                <br>
-                <pre style="font-size: 2rem; color: rgb(255, 255, 255);">   Graphics:                                                    <span>3D</span></pre>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Game Engine:</p>
+                    <p class="disAns">Unreal Engine</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Programming Language:</p>
+                    <p class="disAns">Blueprint</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Genre:</p>
+                    <p class="disAns">RPG, Shooting</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Time Duration:</p>
+                    <p class="disAns">3 weeks</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Graphics:</p>
+                    <p class="disAns">3D</p>
+                </div>
+                <div class="disLine"></div>
                 <br>
                 <br>
             </div>
-            <h2 class="head1" style="margin-top: 100px;">Overview</h2>
-            <p style="font-size: 1.8rem;">"Gangs of Wasseypur" is an rpg shoother game set in the crime-ridden city of Wasseypur. Players will immerse themselves in the gritty underworld of this fictional city and engage in various activities such as combat and exploration. The game aims to provide an engaging and immersive experience where players can take a role of character from the movie "Gangs of Wasseypur" and experience the challenges and triumphs of the criminal world. So, I use Unreal Engine for development. Unreal Engine provides some powerful features which is required to create this game like Anim Graph, Blend Space, Audio Master, AI Behaviour tree, UI Widget, Blackboard, Blueprint and many more. I used Mixamo and Unreal asset store for the animations and effects. For the Environment, I used Unreal modelling tools and created all the buildings. I use Foliage for the vegetations like grass and tree.</p>
-            <br>
-            <h2 class="head1">Story</h2>
-            <p style="font-size: 1.8rem;">The game's story is heavily inspired by the plot of the "Gangs of Wasseypur" movie. It follows the struggles and rivalries between different mafia families in Wasseypur over several generations. Players will experience key events from the perspective of "sultan Qureshi" characters. But for now only the first mission. First is to kill all the enemy and destroy Faizal Khan's house.</p>
         </div>
     </section>
+
+    <section class="Writing">
+        <div class="Writing-contain">
+            <div class="Overview">
+                <h2 class="head1" style="margin-top: 50px;">Over<span>view</span></h2>
+                <p style="font-size: 1.8rem;">"Gangs of Wasseypur" is an rpg shoother game set in the crime-ridden city of Wasseypur. Players will immerse themselves in the gritty underworld of this fictional city and engage in various activities such as combat and exploration. The game aims to provide an engaging and immersive experience where players can take a role of character from the movie "Gangs of Wasseypur" and experience the challenges and triumphs of the criminal world. So, I use Unreal Engine for development. Unreal Engine provides some powerful features which is required to create this game like Anim Graph, Blend Space, Audio Master, AI Behaviour tree, UI Widget, Blackboard, Blueprint and many more. I used Mixamo and Unreal asset store for the animations and effects. For the Environment, I used Unreal modelling tools and created all the buildings. I use Foliage for the vegetations like grass and tree.</p>
+            </div>
+            <br>
+            <br>
+            <div class="Story">
+                <h2 class="head1">Sto<span>ry</span></h2>
+                <p style="font-size: 1.8rem;">The game's story is heavily inspired by the plot of the "Gangs of Wasseypur" movie. It follows the struggles and rivalries between different mafia families in Wasseypur over several generations. Players will experience key events from the perspective of "sultan Qureshi" characters. But for now only the first mission. First is to kill all the enemy and destroy Faizal Khan's house.</p>
+            </div>            
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Development <span>Tools</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-world'></i>
+                <h3>Unreal Engine</h3>
+                <p>A Powerful 3D Creation Tool which is a series of 3D computer graphics game engines developed by Epic Games. It's widely recognized as one of the most powerful and versatile engines available.</p>
+                <a href="https://www.unrealengine.com/en-US" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-blender'></i>
+                <h3>Blender</h3>
+                <p>Blender is a free and open-source 3D computer graphics software tool set used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, etc.</p>
+                <a href="https://www.blender.org/" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-walk'></i>
+                <h3>Mixamo</h3>
+                <p>Mixamo is a 3D computer graphics technology company. Based in San Francisco, the company develops and sells web-based services for 3D character and animation for the game.</p>
+                <a href="https://www.mixamo.com/#/" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-leaf'></i>
+                <h3>Bixel Bridege</h3>
+                <p>Quixel Bridge is a desktop application that acts as a bridge between the vast library of 3D assets in Megascans and your favorite DCC tools like Unreal Engine, Maya, and Blender. It allows you to easily.</p>
+                <a href="https://quixel.com/bridge" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="gameplay">
+        <div class="gameplay-contain">
+            <h2 class="head1">Game <span>Mechanics</span></h2>
+            <p style="font-size: 1.8rem;">
+                Core Mechanics of TPS Games
+                Third-person shooters (TPS) are a subgenre of video games focused on shooting mechanics, but with the player viewing the action from behind their character. This perspective offers several advantages over first-person shooters (FPS) <br><br>  <p style="margin-left: 60px; font-size: 1.8rem;">->Awareness: You can see your character and their surroundings, allowing for better spatial awareness and planning.<br>->Tactical decision-making: You can assess situations and make strategic choices based on your character's position and the environment.<br>->Character immersion: You can connect with your character visually and see their actions and reactions.</p><br> <p style="font-size: 1.8rem;">Third-person perspective: Players would experience the action from a behind-the-shoulder perspective, providing a balance between strategic awareness and immersive combat.<br>
+                    Open-world environment: The game would have a large, open-world environment that players could explore freely, completing missions, encountering characters, and engaging in side activities.<br>
+                    Cover system: Players would utilize a robust cover system to take cover behind objects and engage in tactical gunfights.<br>
+                    Knife combat: The game would feature brutal hand-to-hand combat mechanics, allowing players to fight enemies up close and personal.<br>
+                    Weapon variety: Players would have access to a wide range of firearms and melee weapons reflecting the diverse arsenal used in the Wasseypur underworld.<br>
+                    Stealth mechanics: Players could choose to approach certain situations stealthily, using distractions, takedowns, and silencers to eliminate enemies undetected.<br></p>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         var vid = document.getElementById("myVid");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");            
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         vid.pause();
+      }
+    </script>
 </body>

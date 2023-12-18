@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangs_Project</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header class="header" id="changeColor">
+        <a href="#" class="logo">Port<span>folio</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#service">Skills</a>
+            <a href="#portfolio"  class="active">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+        
+    </header>
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <br>
+            <br>
+            <h3>Over<span>view</span></h3>
+            <br>
+            <div class="imgCha">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 4</div> -->
+                        <video src="Wolfgame.mp4"  controls  style="width: 100%;" id="myVid"></video>
+                        <!--<div class="text">Welcome to Tutorials Point</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 4</div> -->
+                        <img src="wolf1.png" style="width:100%;">
+                        <!--<div class="text">Start yo</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 4</div> -->
+                        <img src="wolf3.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">4 / 4</div> -->
+                        <img src="wolf5.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)" ></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            </div>
+
+
+            <div class="gamedis">
+                <br>
+                <h3 style="text-align: center; color: red;">Mr.</h3>
+                <h3 style="text-align: center; color: red;"></h3>
+                <h3 style="text-align: center; color: red;">Wolf</h3>
+                <br>
+                <br>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Game Engine:</p>
+                    <p class="disAns">Unity Engine</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Programming Language:</p>
+                    <p class="disAns">C#</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Genre:</p>
+                    <p class="disAns">Platform</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Time Duration:</p>
+                    <p class="disAns">1 week</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Graphics:</p>
+                    <p class="disAns">2D</p>
+                </div>
+                <div class="disLine"></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <section class="Writing">
+        <div class="Writing-contain">
+            <div class="Overview">
+                <h2 class="head1" style="margin-top: 50px;">Sum<span>mary</span></h2>
+                <p style="font-size: 1.8rem;">Mr. Wolf is based on the Movie "Bediya". The player can transform from human to wolf to kill and pass the obstacle accordingly. Player have movement like left right and jump, after transformation same control input are there but the jump power and attack power increase.
+
+                    .</p>
+            </div>
+            <br>
+            <br>
+            <div class="Story">
+                <h2 class="head1">Sto<span>ry</span></h2>
+                <p style="font-size: 1.8rem;">The game's story is heavily inspired by Bediya. It follows to survive at any cost.</p>
+            </div>
+            <br>
+            <br>
+            <div class="Story">
+                <h2 class="head1">Target <span>Platforms</span></h2>
+                <p style="font-size: 1.8rem;">PC</p>
+            </div>
+            <br>
+            <br>
+            <div class="Story">
+                <h2 class="head1">Target <span>Audience</span></h2>
+                <p style="font-size: 1.8rem;">Age: 12+ <br>
+                    Fans of Behiya and animal transformation.</p>
+            </div>                  
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Development <span>Tools</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-world'></i>
+                <h3>Unity Engine</h3>
+                <p>Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Worldwide Developers Conference as a Mac OS X game engine..</p>
+                <a href="https://unity.com/" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-walk'></i>
+                <h3>Photoshop</h3>
+                <p>Adobe Photoshop CC is the image editing software market reference, becoming an essential tool for professionals and enthusiasts in the world of digital photography.</p>
+                <a href="https://www.adobe.com/in/products/photoshop.html" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-speaker'></i>
+                <h3>Pixabay</h3>
+                <p>Open source resource, download royalty free audio music MP3 tracks<br> ✓ Free for commercial use<br> ✓ No attribution required.<br> and many more</p>
+                <a href="https://pixabay.com/music/" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="gameplay">
+        <div class="gameplay-contain">
+            <h2 class="head1">Game <span>Mechanics</span></h2>
+            <p style="font-size: 1.8rem;">Game Mechanics
+                Core Gameplay<br>
+                Team-based Combat: Players are divided into two teams, each aiming to eliminate members of the opposing team. <br>
+                Time-based Matches: Matches are time-limited, typically ranging from 5 to 15 minutes. <br>
+                Respawning: Players respawn after being eliminated, contributing to their team's score by eliminating opponents. <br>
+                Weapons and Power-ups: Various weapons (guns, explosives, melee weapons) and power-ups (health boosts, speed boosts, etc.) are scattered throughout the maps. <br>
+                Maps and Environments: Diverse maps with different layouts, obstacles, and strategic points for tactical gameplay.</p>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         var vid = document.getElementById("myVid");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");            
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         vid.pause();
+      }
+    </script>
+</body>
