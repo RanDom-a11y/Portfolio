@@ -40,7 +40,7 @@
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/praveen-kumar-ranjan-486360192/"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://www.facebook.com/praveen.ranjan.7330?mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.instagram.com/retro.pkr/"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://twitter.com/Praveen64381955"><i class='bx bxl-twitter' ></i></a>
             </div> 
             <a href="https://drive.google.com/file/d/1lLsfgvtSeIZ7vprZW6ZwVQAZuVPxasqm/view?usp=drive_link" class="btn">Download CV</a>
@@ -86,6 +86,9 @@
 
 
     <section class="portfolio" id="portfolio">
+        <br>
+        <br>
+        <br>
         <h2 class="heading">Latest <span>Project</span></h2>
             <div class="portfolio-container">
              <div class="portfolio-box">
@@ -94,6 +97,14 @@
                     <h4>Subway Surfer Clone</h4>
                     <p>This is a clone of the popular mobile game "Subway Surfer".</p>
                     <a href="SubaySurfer_clone.html"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="ghost0.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Illuminate</h4>
+                    <p>Game on topic Light and Wonder for game jam on by college.</p>
+                    <a href="inlight.html"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -136,7 +147,7 @@
                     <a href="3D_Art.html"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box" style="margin-left: 425px; margin-right: -425px;">
+            <div class="portfolio-box">
                 <img src="Mech.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Game Mechanics</h4>
@@ -206,79 +217,20 @@
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by Praveen Kumar Ranjan | All Right Reserved.</p>
         </div>
         <div class="footer-iconTop">
-            <a herf="#home"><i class='bx bx-up-arrow-circle'></i></a>
+            <a herf="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
-    <script>
-        /*-----------toggle icon navbar--------*/
-        let menuIcon =document.querySelector('#menu-icon');
-        let navbar = document.querySelector('.navbar');
+    <script src="https://cdn.jsdelivr.net/npm//typed.js@2.0.12"></script>
 
-        menuIcon.onClick = () => {
-          menuIcon.classList.toggle('bx-x');
-          navbar.classList.toggle('active');
-        };
-
-
-        /*-----------------------Scroll active-------*/
-        let section = document.querySelectorAll('section');
-        let navLinks = document.querySelectorAll('header nav a');
-
-        window.onscroll = () => {
-          section.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-
-            if(top >= offset && top <offset + height){
-                navLinks.forEach(link =>{
-                    links.classList.remove('active');
-                document.querySelector('header nav a[herf*=' + id + ']').classList.add('active');
-            };
-         };
-        /*-------------Sticky navbar------------*/
-        let header = document.querySelector('header');
-
-        header.classList.toggle('sticky', window.scrollY > 100);
-
-        /*--------remove toggle icon and navbar when click--------*/
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
-        };
-
-        /*--------------scroll reveal-----------*/
-        ScrollReveal({
-          reset: true,
-          distance: '80px',
-          duration: 2000,
-          delay: 200,
-        });
-  
-        ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });   
-        ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form', { origin: 'bottom' });   
-        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' }); 
-
-        /*--------------------typed js-------------*/
-        const typed = new Typed('.multiple-text', {
-          strings: ['Game Developer', 'Frontend Developer', 'Technical Artist'],
-          typeSpeed: 100,
-          backSpeed: 100,
-          backDelay: 1000,
-          loop: true
-        });
-           
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

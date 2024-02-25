@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Runner</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header class="header" id="changeColor">
+        <a href="#" class="logo">Port<span>folio</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#service">Skills</a>
+            <a href="#portfolio"  class="active">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+        
+    </header>
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <br>
+            <br>
+            <h3>Over<span>view</span></h3>
+            <br>
+            <div class="imgCha">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 4</div> -->
+                        <video src="inlight.mp4"  controls  style="width: 100%;" id="myVid"></video>
+                        <!--<div class="text">Welcome to Tutorials Point</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 4</div> -->
+                        <img src="ghost1.png" style="width:100%;">
+                        <!--<div class="text">Start yo</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 4</div> -->
+                        <img src="ghost2.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">4 / 4</div> -->
+                        <img src="ghost3.png" style="width:100%">
+                        <!--<div class="text">About Us</div>-->
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)" ></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            </div>
+
+
+            <div class="gamedis">
+                <br>
+                <h3 style="text-align: center; color: red;">Illuminate</h3>
+                <h3 style="text-align: center; color: red;"></h3>
+                <h3 style="text-align: center; color: red;"></h3>
+                <br>
+                <br>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Game Engine:</p>
+                    <p class="disAns">Unreal Engine</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Programming Language:</p>
+                    <p class="disAns">Blueprint</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Genre:</p>
+                    <p class="disAns">Horror</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Time Duration:</p>
+                    <p class="disAns">2 days</p>
+                </div>
+                <div class="disLine"></div>
+                <div style="display: flex;">
+                    <p class="disOpt">Graphics:</p>
+                    <p class="disAns">3D</p>
+                </div>
+                <div class="disLine"></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <section class="Writing">
+        <div class="Writing-contain">
+            <div class="Overview">
+                <h2 class="head1" style="margin-top: 50px;">Sum<span>mary</span></h2>
+                <p style="font-size: 1.8rem;">The protagonist is trapped in a mystical realm called Veil of
+                    Darkness where his body is reaped apart by soul reaping
+                    demons called Void Elcroxis. The protagonist, now in the form
+                    of a Skeleton must retrieve his body from the demon while
+                    escaping the lights scattered all across the tunnel. A contact
+                    with the light results in the destruction of protagonist’s soul.
+                    The skeleton can throw the bones from his hands to fight
+                    against the Void enemies. Clearing the Veil of Darkness leads
+                    us to a Dreamland. This Realm is depicted as the Heaven for
+                    the reaped souls.</p>
+            </div>
+            <br>
+            <br>
+            <div class="Story">
+                <h2 class="head1">Game<span>Concept</span></h2>
+                <p style="font-size: 1.8rem;">The concept ‘Light and Wonders’ evokes a sense where Light is
+                    used for or against us in a mystic way. One must use or avoid
+                    Lights to progress in a game. It includes some lights that might
+                    harm us or reduces vitality while some other lights that heals
+                    us. It can also include the guiding lights which helps the player
+                    while navigation or helps in discovering new pathways. The
+                    wonder includes this aspect of lights in a mystic or magical
+                    form.</p>
+                <br>
+                <br>
+                <h2 class="head1">Game <span>Mechanics</span></h2>
+                <p style="font-size: 1.8rem;">
+                    The character can fight the other skeleton enemies by
+                    dodging and attacking.<br>
+                    To dodge the enemy attacks, the character can use Movement keys and Jump/ Crouch/ Sprint.<br>
+                    To attack the enemies, the protagonist will throw his bone from his hands to aim at the enemies.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Development <span>Tools</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-world'></i>
+                <h3>Unreal Engine</h3>
+                <p>A Powerful 3D Creation Tool which is a series of 3D computer graphics game engines developed by Epic Games. It's widely recognized as one of the most powerful and versatile engines available.</p>
+                <a href="https://www.unrealengine.com/en-US" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-blender'></i>
+                <h3>Blender</h3>
+                <p>Blender is a free and open-source 3D computer graphics software tool set used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, etc.</p>
+                <a href="https://www.blender.org/" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-walk'></i>
+                <h3>Mixamo</h3>
+                <p>Mixamo is a 3D computer graphics technology company. Based in San Francisco, the company develops and sells web-based services for 3D character and animation for the game.</p>
+                <a href="https://www.mixamo.com/#/" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-leaf'></i>
+                <h3>Bixel Bridege</h3>
+                <p>Quixel Bridge is a desktop application that acts as a bridge between the vast library of 3D assets in Megascans and your favorite DCC tools like Unreal Engine, Maya, and Blender. It allows you to easily.</p>
+                <a href="https://quixel.com/bridge" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="gameplay">
+        <div class="gameplay-contain">
+            <br>
+            <br>
+            <h2 class="head1">Target<span>Audience</span></h2>
+            <p style="font-size: 1.8rem;">12+
+            <br>Game Jam</p>
+            <br>
+            <br>
+            <h2 class="head1">Target<span>Platform</span></h2>
+            <p style="font-size: 1.8rem;">PC,
+            <br>Android</p>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         var vid = document.getElementById("myVid");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");            
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         vid.pause();
+      }
+    </script>
+</body>

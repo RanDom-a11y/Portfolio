@@ -19,7 +19,7 @@
     --main-color: #0ef;
     --main1-color:#FF0000;
     --main5-color:#a600ff;
-
+    --bg-color1: #000000;
 }
 
 html {
@@ -51,15 +51,15 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    /*background: var(--bg-color);*/
+    background: var(--bg-color1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.header {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .changeColor{
@@ -103,10 +103,39 @@ header {
 .home-img{
     width: 700px;
     height: 500px;
+    
 }
 .img{
     padding-left: -30px;
     height: 500px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-2.1rem)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.img2 {
+    animation: floatImage1 4s ease-in-out infinite;
+}
+
+@keyframes floatImage1 {
+    0% {
+        transform: translate(0)
+    }
+    50% {
+        transform: translate(-2.1rem)
+    }
+    100% {
+        transform: translate(0)
+    }
 }
 
 .home-content h3 {
@@ -183,20 +212,10 @@ span {
 .about-img img{
     width: 35vw;
     margin-top: -90px;
-    animation: floatImage 4s ease-in-out infinite;
+    
 }
 
-@keyframes floatImage {
-    0% {
-        transform: translate(0);
-    }
-    50% {
-        transform: translate(-2.4rem);
-    }
-    100% {
-        transform: translate(0);
-    }
-}
+
 
 .heading {
     text-align: center;
@@ -428,7 +447,6 @@ span {
     font-size: 2.1rem;
 }
 
-.footer {
 
 .certification-box p {
     font-size: 1.6rem;
@@ -438,7 +456,7 @@ span {
 .footer {
     display: flex;
     justify-content: space-between;
-    align-iteams: centre;
+    align-items:  centre;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
@@ -451,15 +469,15 @@ span {
 .footer-iconTop a {
     display: inline-flex;
     justify-content: centre;
-    align-iteams: centre;
+    align-items: centre;
     padding: .8rem;
-    background: var(--main-color);
+    background: var(--main1-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
     
 .footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--main1-color);
 }
     
 .footer-iconTop a i {
@@ -561,7 +579,7 @@ span {
     }
 
     .portfolio-container {
-        grid-template-column: repeat(2, 1fr);
+        grid-template-columns:  repeat(2, 1fr);
     }
 }
 
@@ -600,5 +618,3 @@ span {
     }
 }
  
-
-    
