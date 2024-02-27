@@ -56,9 +56,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
-    
-
+}
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
 }
 .changeColor{
     background-color: rgba(34,34,34,0.8);
@@ -97,14 +97,13 @@ h3{
     font-size: 3.2rem;
     font-weight: 700;
 }
+
 .imgCha{
     width: 700px;
     height: 440px;
     background-color: #323946;
     border-radius: 10px;
 }
-
-
 
 
 * {box-sizing: border-box}
@@ -335,4 +334,37 @@ h3{
     padding-left: 300px;
     padding-right: 300px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main1-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+    
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main1-color);
+}
+    
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
 

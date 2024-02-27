@@ -9,8 +9,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 
     <link rel="stylesheet" href="style1.css">
-    <script src="script.js"></script>
-
 </head>
 <body>
     <header class="header" id="changeColor">
@@ -191,31 +189,17 @@
             <br>Android</p>
         </div>
     </section>
-    <script>
-        var slideIndex = 1;
-      showSlides(slideIndex);
-      function plusSlides(n) {
-         showSlides(slideIndex += n);
-      }
-      function currentSlide(n) {
-         showSlides(slideIndex = n);
-      }
-      function showSlides(n) {
-         var i;
-         var slides = document.getElementsByClassName("mySlides");
-         var dots = document.getElementsByClassName("dot");
-         var vid = document.getElementById("myVid");
-         if (n > slides.length) {slideIndex = 1}
-         if (n < 1) {slideIndex = slides.length}
-         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-         }
-         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");            
-         }
-         slides[slideIndex-1].style.display = "block";
-         dots[slideIndex-1].className += " active";
-         vid.pause();
-      }
-    </script>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Praveen Kumar Ranjan | All Right Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop">
+            <a herf="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script1.js"></script>
 </body>
+</html>

@@ -1,14 +1,15 @@
-/*-----------toggle icon navbar--------*/
-let menuIcon =document.querySelector('#menu-icon');
+/*----------------toggle icon navbar----------*/
+let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onClick = () => {
+menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 };
 
 
-/*-----------------------Scroll active-------*/
+
+/*-------------scroll sections active links--------------*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -19,39 +20,41 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
-    if(top >= offset && top < offset + height) {
+    if(top >= offset && top < offset + height){
       navLinks.forEach(links => {
         links.classList.remove('active');
         document.querySelector('header nav a[herf*=' + id + ']').classList.add('active');
       });
     };
   });
-    /*-------------Sticky navbar------------*/
-    let header = document.querySelector('header');
-z
-    header.classList.toggle('sticky', window.scrollY > 100);
+  /*-------------------------------sticky navBar-------------------------*/
+  let header = document.querySelector('header');
 
-    /*--------remove toggle icon and navbar when click--------*/
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+  header.classList.toggle('sticky', window.scrollY > 100);
+
+  /*------------remove toogle icon and navbar when click link(scroll)-------*/
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('active');
 };
 
-/*--------------scroll reveal-----------*/
+
+/*---------------------------scroll reveal---------------------------------*/
 ScrollReveal({
-  reset: false,
+  //reset: true,
   distance: '80px',
   duration: 2000,
-  delay: 200,
+  delay: 200
 });
-  
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });   
-ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form', { origin: 'bottom' });   
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' }); 
 
-/*--------------------typed js-------------*/
+ScrollReveal().reveal('.home-content, .heading',{origin: 'top'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .certification-box, .contact form',{origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img',{origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content',{origin: 'right'});
+
+
+/*---------------------------------------typed js-------------------------*/
 const typed = new Typed('.multiple-text', {
-  strings: ['Game Developer', 'Frontend Developer', 'Technical Artist'],
+  strings: ['Game developer', 'Frontend Developer', 'Technical Artist'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
